@@ -5,6 +5,8 @@ class AppDelegate
   include CDQ
   
   def application(application, didFinishLaunchingWithOptions:launchOptions)
+    cdq.setup
+    
     rootViewController = UIViewController.alloc.init
     rootViewController.title = 'frc_crash'
     rootViewController.view.backgroundColor = UIColor.whiteColor
